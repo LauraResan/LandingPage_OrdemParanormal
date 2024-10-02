@@ -1,0 +1,165 @@
+@import "style.css";
+
+/*pagina sangue*/
+#paginaenergia{
+
+    background: black url('../Imagens/Vortex-energia.gif') right center no-repeat;
+    background-size: cover;
+}
+
+#paginaenergia > a{
+
+    display: flex;
+    margin-bottom: -100px;
+    margin-left: 20px;
+
+}
+
+#paginaenergia > a:hover{
+
+    margin-left: 1px;
+
+}
+
+#paginaenergia h1{
+
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.7em;
+    margin-bottom: 50px;
+
+    font-family: var(--font3);
+
+}
+
+#paginaenergia h1 > span{
+
+    display: inline;
+    font-weight: 100;
+    font-size: 1.7em;
+    letter-spacing: 0.6em;
+
+}
+
+
+/*cards*/
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    grid-column-gap: 3vh;
+    grid-row-gap: 2vh;
+    padding-left: 6%;
+    padding-right: 2%;
+    margin: auto;
+}
+
+
+.card {
+    width: 220px;
+    height: 220px;
+    border-radius: 25px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.card:hover{
+    width: 240px;
+    height: 240px;
+}
+
+.card > img {
+    width: 100%;
+    height: 90%;
+    display: block;
+    margin: auto;
+}
+
+.card > img:hover{
+    margin-left: 5px3;
+}
+
+/*popup*/
+
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.623);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.popup-wrapper {
+    width: 80%;
+    height: 80%;
+    border-radius: 25px;
+}
+
+.popup-close {
+    border: 5px solid black;
+    background-color: rgb(255, 0, 0);
+    color: #ffffff;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    top: 5%;
+    right: -92%;
+    cursor: pointer;
+}
+
+.popup-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+/*retrato*/
+.popup-content > img {
+    flex: 50%;
+    width: 70%;
+    height:70%;
+    border: 10px solid #000;
+    margin: 10px 10px 10px 10px;
+    filter: drop-shadow(0 0 1rem rgb(60, 0, 57));
+}
+
+.popup-content-text{
+
+    color: white;
+    font-size: 1.2em;
+    font-family: var(--font1);
+
+    margin-left: 2px;
+
+}
+
+.popup-content-text > h2{
+    text-shadow: 1px 3px 1px black;
+    font-weight: 100;
+    font-size: 1.9em;
+    margin-top: -0.9%;
+    margin-bottom: 10%;
+}
+
+.popup-content-text > p{
+
+ font-family: var(--font1);
+    
+}
+
+
+.energia {
+    background: radial-gradient(circle, #6900ff 0%, #150033 90%);
+}

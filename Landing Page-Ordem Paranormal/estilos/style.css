@@ -1,0 +1,105 @@
+/*poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*Marcellus*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+/*Sangue - lost in south*/
+@font-face {
+    font-family: lost in south;
+    src: url('../fontes/Lost_in_South/Lost\ in\ South.ttf');
+}
+/*Energia - Rubik Glitch */
+@font-face {
+    font-family: rubik glitch;
+    src: url('../fontes/Rubik_Glitch/RubikGlitch-Regular.ttf');
+}
+/*Morde - Bahianita*/
+@font-face {
+    font-family: bahianita;
+    src: url('../fontes/Bahianita/Bahianita-Regular.ttf');
+}
+/*Conhecimento - Megrim*/
+@font-face {
+    font-family: megrin;
+    src: url('../fontes/Megrim/Megrim-Regular.ttf');
+}
+/*Medo - */
+@font-face {
+    font-family: umbilical noose ;
+    src: url(../fontes/dk_umbilical_noose/DK\ Umbilical\ Noose.ttf);
+}
+
+
+:root{
+
+    --font1: 'Poppins',sans-serif;
+    --font2: serif;
+    --font3: 'Marcellus', sans-serif;
+    --fontSangue: 'lost in south';
+    --fontEnergia: 'rubik glitch';
+    --fontConhecimento: 'megrin';
+    --fontMorte: 'bahianita';
+    --fontMedo: 'umbilical noose';
+
+    --cor_descrição: #3D0701;
+    --cor_div_sangue: linear-gradient(to center, #c70000, #000000);
+    --cor_div_enegia: #3D0701;
+    --cor_div_conhecimento: ;
+    --cor_div_morte: ;
+
+}
+
+/*fontes especiais para elementos*/
+
+.txtmorte{
+
+    font-family: var(--fontMorte);
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+}
+
+
+.txtsange{
+
+    font-family: var(--fontSangue);
+    letter-spacing: 0.1em;
+
+}
+
+
+.txtconhecimento{
+
+    font-family: var(--fontConhecimento);
+    font-weight: 600;
+
+}
+
+
+.txtenergia{
+
+    font-family: var(--fontEnergia);
+
+}
+
+
+.txtmedo{
+
+    font-family: var(--fontMedo);
+
+}
+/*pagina morte*/
+#paginamorte{
+
+    background: black url('../Imagens/Vortex-morte.gif') center top no-repeat;
+    background-size: cover;
+
+}
+
+#paginamorte h1{
+
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 0.7em;
+
+    font-family: var(--font3);
+
+}

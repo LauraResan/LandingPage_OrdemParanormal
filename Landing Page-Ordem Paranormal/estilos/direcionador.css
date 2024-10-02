@@ -1,0 +1,146 @@
+@import "style.css";
+
+/*pagina de direcionamento para as paginas de criaturas*/
+
+body.paginademenu{
+
+    background: black url('../Imagens/Fagulhas-caindo.gif') center center no-repeat;
+    background-size: cover;
+
+}
+
+.logopaginademenu{
+    width: 64vh;
+    height: auto;
+
+    display: flex;
+    align-items: start;
+    margin-left: 10vh;
+    margin-top: 5vh;
+}
+
+div.descricao{
+
+    font-family:sans-serif;
+    font-size: 1.4em;
+    text-align: center;
+    color: white;
+
+    
+    background: var(--cor_descrição);
+    width: 500px;
+    padding: 40px 25px;
+
+    display: flex;
+    margin-left: 53%;
+    margin-top: -38%;
+
+}
+
+
+div.descricao {
+
+    --mask: radial-gradient(40px at 40px 40px,#0000 98%,#000) -40px -40px;
+    -webkit-mask: var(--mask);
+            mask: var(--mask);
+
+}
+.descricao  .txtsange:hover{
+
+    color: rgb(217, 0, 0);
+    text-shadow: 1px 1px 10px rgb(217, 0, 0);
+    color:#000000;
+    font-size: 1.2em;
+
+}
+.descricao  .txtmorte:hover{
+
+    text-shadow: 1px 1px 10px rgb(0, 0, 0);
+    color:#000000;
+    font-size: 1.4em;
+
+}
+.descricao  .txtconhecimento:hover{
+
+    text-shadow: 1px 1px 8px rgb(204, 188, 47);
+    color: rgb(0, 0, 0);
+    font-size: 1.1em;
+
+}
+.descricao .txtenergia:hover{
+
+    text-shadow: 1px 1px 8px rgb(192, 51, 192);
+    color: rgb(4, 0, 4);
+    font-size: 1.1em;
+
+}
+
+.descricao .txtmedo:hover{
+
+    text-shadow: 1px 1px 9px rgb(187, 187, 187);
+    color: black;
+    font-size: 1.1em;
+
+}
+
+nav.Conteiner_elementos{
+
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 25% 10% ;
+
+
+}
+
+a.elementos > img{
+    
+    margin-left: 5px;
+    height: 170%;
+    width: auto;
+
+}
+
+a.elementos > img:nth-child(3)  {
+
+    grid-column: 3 / 4;
+
+}
+
+
+
+a.elementos:nth-child(1) > img:hover{
+
+    filter: drop-shadow(0 0 1rem rgb(255, 0, 0));
+    height: 190%;
+    width: auto;
+
+}
+a.elementos:nth-child(2) > img:hover{
+
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+    height: 190%;
+    width: auto;
+
+}
+a.elementos:nth-child(3) > img:hover{
+
+    filter: drop-shadow(0 0 1rem rgb(255, 255, 255));
+    height: 190%;
+    width: auto;
+
+}
+a.elementos:nth-child(4) > img:hover{
+
+    filter: drop-shadow(0 0 1rem rgb(255, 0, 208));
+    height: 190%;
+    width: auto;
+
+}
+a.elementos:nth-child(5) > img:hover{
+
+    filter: drop-shadow(0 0 1rem rgb(255, 179, 0));
+    height: 190%;
+    width: auto;
+
+}
